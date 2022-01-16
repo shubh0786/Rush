@@ -9,6 +9,7 @@
 
     <Shell.Resources>
         <ResourceDictionary>
+            <Color x:Key="Primary">brown</Color>
             <Style x:Key="BaseStyle" TargetType="Element">
                 <Setter Property="Shell.BackgroundColor" Value="{StaticResource Primary}" />
                 <Setter Property="Shell.ForegroundColor" Value="White" />
@@ -26,13 +27,13 @@
     </Shell.Resources>
 
     <TabBar>
-        
+        <ShellContent Title="Map" Icon="icon_about.png" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
+        <ShellContent Title="Home" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
+        <ShellContent Title="About" Icon="icon_feed.png" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </TabBar>
 
    
-    <TabBar>
-        
-    </TabBar>
+    
 
 
 </Shell>
