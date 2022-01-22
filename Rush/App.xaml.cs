@@ -1,4 +1,5 @@
 ﻿
+using Rush.Services;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -12,7 +13,7 @@ namespace Rush
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            DependencyService.Register<Place>();
             MainPage = new AppShell();
         }
 
